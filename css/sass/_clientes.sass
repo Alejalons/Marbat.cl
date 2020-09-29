@@ -1,0 +1,50 @@
+.clientes
+    padding: 70px 0
+    .titulo-contenedor
+        width: 100%
+        .titulo
+            text-align: center
+            font-size: 40px
+            line-height: 40px
+            font-weight: 500
+            margin-bottom: 40px
+    .listado-clientes            
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: space-between
+        .cliente
+            width: 100%
+            overflow: hidden
+            margin-bottom: 20px
+            .empresa-img
+                width: 20%
+                float: left
+                text-align: right
+                margin: 10px 20px
+                img
+                    max-width: 100px
+                    width: 100%
+                    vertical-align: top
+                    border-radius: 100%
+            .review
+                float: left
+                width: 80%
+                padding: 0 30px
+                margin-top: 20px
+                .texto
+                    font-size: 20px
+                    line-height: 28px
+                    margin-bottom: 10px
+                    font-weight: 500
+                    font-style: italic
+                .nombre
+                    color: #ddb146
+                    font-size: 16px
+            &.derecha
+                .empresa-img
+                    float: right
+                    text-align: left
+                .review
+                    float: right
+                    text-align: right
