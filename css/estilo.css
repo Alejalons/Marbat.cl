@@ -184,10 +184,16 @@ header .portada {
     justify-content: center;
     padding-bottom: 10px; }
     .contacto .error-content .errores {
-      width: 50%;
-      font-size: 20px;
-      font-weight: 500;
-      color: #c00000c0; }
+      width: 30%; }
+      .contacto .error-content .errores .emailSend {
+        width: 100%;
+        margin-bottom: 10px; }
+        .contacto .error-content .errores .emailSend img {
+          vertical-align: top; }
+      .contacto .error-content .errores p {
+        font-size: 20px;
+        font-weight: 500;
+        color: #c00000c0; }
   .contacto .formulario {
     display: flex;
     flex-direction: row;

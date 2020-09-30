@@ -62,22 +62,19 @@ if(isset($_POST['submit']))
     if(count($errores) == 0)
     {
             //Datos Correo
-           $destinatario = "ux.mor.dez@gmail.com";
-           $asunto = "Contacto desde nuestra Web";
+        //    $destinatario = "ux.mor.dez@gmail.com";
+        //    $asunto = "Contacto desde nuestra Web";
 
-           $carta = "De: $nombre \n";
-           $carta .= "Correo: $correo \n";
-           $carta .= "Teléfono / Celular: $numero \n";
-           $carta .= "Mensaje: $mensaje";
+        //    $carta = "De: $nombre \n";
+        //    $carta .= "Correo: $correo \n";
+        //    $carta .= "Teléfono / Celular: $numero \n";
+        //    $carta .= "Mensaje: $mensaje";
 
-           //enviando mensaje
-           if(mail($destinatario, $asunto, $carta))
-           {
-
-           }
-           else{
-                echo "<div class='error-content'><div class='errores'><img src='img/Vectores/Email.png' alt='Correo Enviado Exitosamente'></div></div>";
-           }
+        //    //enviando mensaje
+        //    mail($destinatario, $asunto, $carta)
+           
+        echo "<div class='error-content'><div class='errores'><img src='img/Vectores/Email.png' alt='Correo Enviado Exitosamente'></div></div>";
+          
     }
     else
     {
