@@ -1,0 +1,36 @@
+@media screen and ( max-width: 800px ) 
+    header
+        .menu
+            text-align: center            
+            .contenedor
+                flex-direction: column
+                .logo
+                    img
+                        height: 70px
+                .item
+                    margin: 5px 20px
+    .servicios
+        .listado-servicio
+            text-align: center
+            .servicio
+                width: 100%
+                .thumb
+                    img
+                        width: 80%
+                        height: 350px
+                .descripcion
+                    .primera_linea
+                        &:after
+                            content: none
+    .contacto
+        .error-content
+            .errores
+                width: 70%
+        .formulario
+            flex-direction: column
+            .tipo-input
+                width: 100%
+            .tipo-textArea
+                width: 100%
+                textarea
+                    height: 180px
