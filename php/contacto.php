@@ -76,7 +76,7 @@ if(isset($_POST['submit']))
 
            }
            else{
-                echo "<div class='error-content'><div class='errores'>d</div></div>";
+                echo "<div class='error-content'><div class='errores'><img src='img/Vectores/Email.png' alt='Correo Enviado Exitosamente'></div></div>";
            }
     }
     else
