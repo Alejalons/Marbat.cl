@@ -71,7 +71,13 @@ if(isset($_POST['submit']))
            $carta .= "Mensaje: $mensaje";
 
            //enviando mensaje
-           mail($destinatario, $asunto, $carta);
+           if(mail($destinatario, $asunto, $carta))
+           {
+
+           }
+           else{
+                echo "<div class='error-content'><div class='errores'>d</div></div>";
+           }
     }
     else
     {

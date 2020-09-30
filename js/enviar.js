@@ -8,7 +8,7 @@ function enviar(){
         var param = 'nombre='+nombre+'&correo='+correo+'&mensaje='+mensaje+'&numero='+numero+'&submit='+submit;
     $.ajax({
         type: 'post',
-        url: '/php/Marbat/php/contacto.php',
+        url: '/Marbat/php/contacto.php',
         data: param,
         success: function(data){
             $("#respuesta").html(data);
