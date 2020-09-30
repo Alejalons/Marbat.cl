@@ -6,6 +6,7 @@ if(isset($_POST['submit']))
     $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : false;
     $correo = isset($_POST['correo']) ? $_POST['correo'] : false;
     $mensaje = isset($_POST['mensaje']) ? $_POST['mensaje'] : false;
+    $numero = isset($_POST['numero']) ? $_POST['numero'] : false;
 
     //debug
     // var_dump($_POST);
@@ -36,6 +37,17 @@ if(isset($_POST['submit']))
         array_push($errores, "* El Correo no es valido intente nuevamente");
     }
 
+        //validacion numero
+    if(!empty($numero))
+    {
+        $numero_validado = true;
+    }
+    else
+    {
+        $numero_validado = false;
+        array_push($errores, "* Teléfono / Celular es requerido intente nuevamente");
+    }
+
         //validacion Mensaje
     if(!empty($mensaje)){
         $email_validado = true;
@@ -43,13 +55,23 @@ if(isset($_POST['submit']))
     else
     {
         $email_validado = false;
-        array_push($errores, "* Mensaje no valido intente nuevamente");
+        array_push($errores, "* Mensaje es requerido intente nuevamente");
     }
     //¡¡FALTA VALIDAR LARGO DE MENSAJE NO DEBE SER INFINITO!!
 
     if(count($errores) == 0)
     {
+            //Datos Correo
+           $destinatario = "ux.mor.dez@gmail.com";
+           $asunto = "Contacto desde nuestra Web";
 
+           $carta = "De: $nombre \n";
+           $carta .= "Correo: $correo \n";
+           $carta .= "Teléfono / Celular: $numero \n";
+           $carta .= "Mensaje: $mensaje";
+
+           //enviando mensaje
+           mail($destinatario, $asunto, $carta);
     }
     else
     {

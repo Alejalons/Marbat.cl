@@ -125,10 +125,15 @@
                 <div id="respuesta"></div>                    
 
                 <form class="formulario" onsubmit="return enviar();" method="post">
-                    <input type="text" id="nombre"  placeholder="Nombre" name="nombre" require>
-                    <input type="email" id="correo" placeholder="Correo" name="correo" require>
-                    <input type="text" id="numero" placeholder="Telefono / Celular" name="numero" require>
-                    <textarea name="mensaje" id="mensaje"  placeholder="Mensaje:"></textarea>
+                    <div class="tipo-input">
+                        <input type="text" id="nombre"  placeholder="Nombre" name="nombre" required>
+                        <input type="email" id="correo" placeholder="Correo" name="correo" required>
+                        <input type="text" id="numero" placeholder="Telefono / Celular" name="numero" >
+                    </div>
+                    <div class="tipo-textArea">
+                        <textarea name="mensaje" id="mensaje"  placeholder="Mensaje:"></textarea>
+                    </div>                    
+                    
                     <input class="boton" id="submit" type="submit" value="Enviar" name="submit">
                 </form>
             </div>
