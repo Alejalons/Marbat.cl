@@ -245,13 +245,8 @@ footer {
       .servicios .listado-servicio .servicio .descripcion .primera_linea:after {
         content: none; }
 
-  .contacto .error-content .errores {
-    width: 70%; }
-  .contacto .formulario {
-    flex-direction: column; }
-    .contacto .formulario .tipo-input {
-      width: 100%; }
-    .contacto .formulario .tipo-textArea {
-      width: 100%; }
-      .contacto .formulario .tipo-textArea textarea {
-        height: 180px; } }
+  .contacto .contactos {
+    flex-direction: column;
+    align-items: center; }
+    .contacto .contactos .info {
+      width: 100%; } }
