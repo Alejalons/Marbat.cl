@@ -71,7 +71,8 @@ header .portada {
     .main .somos article p {
       margin-bottom: 30px;
       line-height: 28px;
-      font-weight: 400; }
+      font-weight: 500;
+      font-size: 22px; }
 
 .servicios {
   padding: 70px 0;
@@ -98,7 +99,8 @@ header .portada {
         margin-bottom: 10px; }
         .servicios .listado-servicio .servicio .thumb img {
           vertical-align: top;
-          width: 100%; }
+          width: 100%;
+          height: 230px; }
       .servicios .listado-servicio .servicio .descripcion {
         text-align: center; }
         .servicios .listado-servicio .servicio .descripcion .primera_linea {

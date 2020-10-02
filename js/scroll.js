@@ -3,7 +3,6 @@ $(document).ready(function(){
     //Scroll Elementos Menu
     var quienesSomos = $('#somos').offset().top,
         servicios = $('#servicios').offset().top,
-        clientes = $('#clientes').offset().top,
         contacto = $('#contacto').offset().top;
     
     //Boton Quienes Somos
@@ -22,14 +21,7 @@ $(document).ready(function(){
         },500);
     });
 
-    //Boton Clientes
-    $('#btn-clientes').on('click', function(e){
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: clientes
-        },500);
-    });
-
+  
     //Boton Contacto
     $('#btn-contacto').on('click', function(e){
         e.preventDefault();
