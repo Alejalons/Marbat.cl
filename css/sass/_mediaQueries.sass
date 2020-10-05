@@ -1,4 +1,4 @@
-@media screen and ( max-width: 800px ) 
+@media screen and ( max-width: 800px )
     header
         .menu
             text-align: center            
@@ -6,7 +6,7 @@
                 flex-direction: column
                 .logo
                     img
-                        height: 70px
+                        height: 70px                       
                 .item
                     margin: 5px 20px
     .servicios
@@ -18,6 +18,7 @@
                     img
                         width: 100%
                         height: 220px
+                        object-fit: cover
                 .descripcion
                     .primera_linea
                         &:after
@@ -28,3 +29,28 @@
             align-items: center
             .info
                 width: 100%
+    .galeria
+        grid-template-columns: repeat(4, 1fr)
+        .imagen-galeria
+            opacity: 1
+        .foto
+            &:nth-child(1)
+                grid-column-start: span 2
+                grid-row-start: span 1
+            &:nth-child(3)
+                grid-row-start: span 1
+            &:nth-child(4)
+                grid-column-start: span 2
+            &:nth-child(6)
+                grid-row-start: span 1
+            &:nth-child(9)
+                grid-row-start: span 1
+                grid-column-start: span 2
+            &:nth-child(10)
+                grid-row-start: span 1
+                grid-column-start: span 2
+            &:nth-child(11)
+                grid-column-start: span 2
+@media screen and ( max-width: 400px )
+    .galeria
+        grid-template-columns: repeat(2, 1fr)  

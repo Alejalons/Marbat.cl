@@ -119,55 +119,32 @@ header .portada {
           font-size: 21px;
           line-height: 24px; }
 
-.clientes {
-  padding: 70px 0; }
-  .clientes .titulo-contenedor {
-    width: 100%; }
-    .clientes .titulo-contenedor .titulo {
-      text-align: center;
-      font-size: 40px;
-      line-height: 40px;
-      font-weight: 500;
-      margin-bottom: 40px; }
-  .clientes .listado-clientes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .clientes .listado-clientes .cliente {
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 20px; }
-      .clientes .listado-clientes .cliente .empresa-img {
-        width: 20%;
-        float: left;
-        text-align: right;
-        margin: 10px 20px; }
-        .clientes .listado-clientes .cliente .empresa-img img {
-          max-width: 100px;
-          width: 100%;
-          vertical-align: top;
-          border-radius: 100%; }
-      .clientes .listado-clientes .cliente .review {
-        float: left;
-        width: 80%;
-        padding: 0 30px;
-        margin-top: 20px; }
-        .clientes .listado-clientes .cliente .review .texto {
-          font-size: 20px;
-          line-height: 28px;
-          margin-bottom: 10px;
-          font-weight: 500;
-          font-style: italic; }
-        .clientes .listado-clientes .cliente .review .nombre {
-          color: #ddb146;
-          font-size: 16px; }
-      .clientes .listado-clientes .cliente.derecha .empresa-img {
-        float: right;
-        text-align: left; }
-      .clientes .listado-clientes .cliente.derecha .review {
-        float: right;
-        text-align: right; }
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  padding: 28px;
+  grid-gap: 10px; }
+  .galeria .imagen-galeria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; }
+    .galeria .imagen-galeria:hover {
+      opacity: 1;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .galeria .foto:nth-child(1) {
+    grid-row-start: span 2; }
+  .galeria .foto:nth-child(4) {
+    grid-row-start: span 2; }
+  .galeria .foto:nth-child(6) {
+    grid-row-start: span 2; }
+  .galeria .foto:nth-child(3) {
+    grid-row-start: span 2; }
+  .galeria .foto:nth-child(9) {
+    grid-row-start: span 2; }
 
 .contacto {
   padding: 70px 0px;
@@ -243,7 +220,8 @@ footer {
       width: 100%; }
       .servicios .listado-servicio .servicio .thumb img {
         width: 100%;
-        height: 220px; }
+        height: 220px;
+        object-fit: cover; }
       .servicios .listado-servicio .servicio .descripcion .primera_linea:after {
         content: none; }
 
@@ -251,4 +229,29 @@ footer {
     flex-direction: column;
     align-items: center; }
     .contacto .contactos .info {
-      width: 100%; } }
+      width: 100%; }
+
+  .galeria {
+    grid-template-columns: repeat(4, 1fr); }
+    .galeria .imagen-galeria {
+      opacity: 1; }
+    .galeria .foto:nth-child(1) {
+      grid-column-start: span 2;
+      grid-row-start: span 1; }
+    .galeria .foto:nth-child(3) {
+      grid-row-start: span 1; }
+    .galeria .foto:nth-child(4) {
+      grid-column-start: span 2; }
+    .galeria .foto:nth-child(6) {
+      grid-row-start: span 1; }
+    .galeria .foto:nth-child(9) {
+      grid-row-start: span 1;
+      grid-column-start: span 2; }
+    .galeria .foto:nth-child(10) {
+      grid-row-start: span 1;
+      grid-column-start: span 2; }
+    .galeria .foto:nth-child(11) {
+      grid-column-start: span 2; } }
+@media screen and (max-width: 400px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr); } }
